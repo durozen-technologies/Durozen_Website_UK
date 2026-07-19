@@ -289,3 +289,35 @@
 **[2026-07-19 19:03:59] Remove Git Log Files**
 - **Request:** remove the git log files as we are going to push the it to an another repo
 - **Action:** Executed Remove-Item -Recurse -Force .git to remove the git history.
+
+**[2026-07-19 19:06:29] Push to New Remote**
+- **Request:** push to https://github.com/durozen-technologies/Durozen_Website_UK.git
+- **Action:** Initialized a new git repository, committed all files, set the remote origin, and pushed to the new remote.
+
+**[2026-07-19 19:15:31] Run Local Development Server**
+- **Request:** run the code
+- **Action:** Executed npm install and started the Vite development server (npm run dev).
+
+**[2026-07-19 19:17:25] Remove Careers Page**
+- **Request:** remove the carees page
+- **Action:** Deleted src/pages/Careers.tsx, and removed references to it in src/App.tsx, src/components/Navigation.tsx, and src/components/Footer.tsx.
+
+**[2026-07-19 19:19:38] Modify Apps Script**
+- **Request:** modify the app script to [remove careers logic]
+- **Action:** Overwrote scripts/contact-form-backend.gs to remove all logic and email templates related to the careers form, retaining only the standard contact form functionality.
+
+**[2026-07-19 19:22:04] Create Env Variables**
+- **Request:** create an .env file to keep the app script api
+- **Action:** Created .env and .env.example files with the VITE_GOOGLE_SCRIPT_URL variable, and added .env to .gitignore.
+
+**[2026-07-19 19:25:03] Fix Apps Script Syntax Error**
+- **Request:** Fix SyntaxError: Unexpected end of input line 206
+- **Action:** Removed extraneous backslashes escaping backticks and template variables inside scripts/contact-form-backend.gs that were causing the template literals to be parsed incorrectly.
+
+**[2026-07-19 19:32:10] Set Apps Script URL**
+- **Request:** [Provided Apps Script URL]
+- **Action:** Updated the .env file with the actual VITE_GOOGLE_SCRIPT_URL.
+
+**[2026-07-19 19:36:12] Add doGet to Apps Script**
+- **Request:** [Provided execution logs showing doGet failing]
+- **Action:** Added a doGet function to scripts/contact-form-backend.gs to handle GET requests gracefully and prevent execution errors when the Web App URL is visited directly.

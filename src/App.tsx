@@ -11,7 +11,7 @@ import CaseStudies from './pages/CaseStudies';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
 import CookiePolicy from './pages/CookiePolicy';
-import Careers from './pages/Careers';
+
 import ScrollToTop from './components/ScrollToTop';
 
 export default function App() {
@@ -28,7 +28,7 @@ export default function App() {
             <Route path="/services" element={<Services />} />
             <Route path="/solutions" element={<Solutions />} />
             <Route path="/case-studies" element={<CaseStudies />} />
-            <Route path="/careers" element={<Careers />} />
+
             <Route path="/contact" element={<Contact />} />
             <Route path="/privacy" element={<PrivacyPolicy />} />
             <Route path="/terms" element={<TermsOfService />} />

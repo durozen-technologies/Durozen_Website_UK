@@ -13,7 +13,7 @@ export default function Navigation() {
     { id: '/services', label: 'Services' },
     { id: '/solutions', label: 'Solutions' },
     { id: '/case-studies', label: 'Case Studies' },
-    { id: '/careers', label: 'Careers' },
+
     { id: '/contact', label: 'Contact' },
   ];
 
